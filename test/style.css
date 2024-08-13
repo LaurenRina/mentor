@@ -1,12 +1,10 @@
 :root {
   --main-color: #353732;
   --additional-color: #45525b;
-  --default-font-family: "Roboto", sans-serif;
-  --additional-font-family: Poppins;
 }
 
 body {
-  font-family: var(--default-font-family);
+  font-family: "Roboto", sans-serif;
   display: block;
   background: #fff;
   width: 1440px;
@@ -53,14 +51,14 @@ nav > ul > li > a {
   line-height: 16px;
 }
 
-header {
+.hero {
   width: 800px;
   height: 148px;
   padding: 0 16px;
   margin: 100px 320px 0;
 }
 
-header > h1 {
+.hero > h1 {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -81,9 +79,8 @@ main > section {
 main > section > article {
   display: inline-block;
   background: #ffffff;
-  border: -1px solid #f8f8f8;
+  border: 1px solid #f8f8f8;
   border-radius: 10px;
-  opacity: 0px;
   box-shadow: 0px 3px 15px 0px #00000008;
 }
 
@@ -109,6 +106,7 @@ h3 {
 }
 
 h5 {
+  font-family: Poppins;
   font-size: 12px;
   line-height: 12px;
   margin: 20px 0 0;
