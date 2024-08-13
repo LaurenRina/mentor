@@ -174,7 +174,6 @@ button:hover {
 .aricles__item-reverse {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
 }
 
 .aricles__item-text {
