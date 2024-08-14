@@ -139,7 +139,7 @@ button:hover {
 }
 
 .hero__btn,
-.aricles__item-text--btn {
+.aricles__item-btn {
   padding: 16px 32px;
   background-color: #0033ff;
   border-radius: 8px;
@@ -166,8 +166,8 @@ button:hover {
 
 .aricles__item {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 96px 48px 0;
 }
 
@@ -176,38 +176,81 @@ button:hover {
   flex-direction: row-reverse;
 }
 
-.aricles__item-text {
+.aricles__item-text,
+.aricles__item-reverse--text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   max-width: 442px;
 }
 
 .aricles__item-reverse--text {
+  align-items: end;
   text-align: right;
 }
 
-.aricles__item-text--topic {
+.aricles__item-topic {
   font-size: 12px;
   line-height: 14px;
+  text-transform: uppercase;
   color: #a6a8ad;
-  padding-top: 108px;
 }
 
-.aricles__item-text--title {
+.aricles__item-title,
+.creators__title {
+  font-weight: 400;
   font-size: 28px;
   line-height: 36px;
-  padding-top: 5px;
 }
 
-.aricles__item-text--description {
+.aricles__item-description {
   font-size: 16px;
   line-height: 24px;
-  padding-top: 12px;
 }
 
-.aricles__item-text--btn {
-  padding: 6px 20px;
-  margin-top: 18px;
+.aricles__item-btn {
+  width: fit-content;
+  padding: 8px 20px;
 }
 
 .aricles__item-img {
   max-width: 580px;
+}
+
+.creators {
+  padding: 120px 48px;
+}
+
+.creators__title {
+  margin-bottom: 24px;
+}
+
+.creators__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creators__cards-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  max-width: 361px;
+  padding: 32px;
+}
+
+.creators__cards-item--title {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.creators__cards-item--name {
+  align-self: start;
+  font-size: 14px;
+  line-height: 20px;
+  color: #767676;
 }
