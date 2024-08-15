@@ -170,20 +170,19 @@ button:hover {
   padding: 96px 48px 0;
 }
 
-.aricles__item-reverse {
+.aricles__reverse {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.aricles__item-text,
-.aricles__item-reverse--text {
+.aricles__item-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 442px;
 }
 
-.aricles__item-reverse--text {
+.aricles__reverse-text {
   align-items: end;
   text-align: right;
 }
@@ -195,8 +194,7 @@ button:hover {
   color: #a6a8ad;
 }
 
-.aricles__item-title,
-.creators__title {
+.aricles__item-title {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
@@ -224,6 +222,9 @@ button:hover {
 }
 
 .creators__title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
   margin-bottom: 24px;
 }
 
@@ -244,15 +245,70 @@ button:hover {
   padding: 32px;
 }
 
-.creators__cards-item--title {
+.creators__cards-title {
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
 }
 
-.creators__cards-item--name {
+.creators__cards-name {
   align-self: start;
   font-size: 14px;
   line-height: 20px;
   color: #767676;
+}
+
+.promo {
+  position: relative;
+  z-index: 1;
+  padding-top: 283px;
+  padding-bottom: 288px;
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.promo__text {
+  text-align: center;
+}
+
+.promo__title {
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-bottom: 57px;
+}
+
+.promo__btn {
+  padding: 8px 20px;
+  background-color: #0033ff;
+  border-radius: 8px;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  padding: 48px 48px 60px;
+  color: #a6a8ad;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer__copyright {
+  padding-right: 48px;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
