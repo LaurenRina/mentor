@@ -138,8 +138,7 @@ button:hover {
   line-height: 24px;
 }
 
-.hero__btn,
-.aricles__item-btn {
+.hero__btn {
   padding: 16px 32px;
   background-color: #0033ff;
   border-radius: 8px;
@@ -209,8 +208,11 @@ button:hover {
 }
 
 .aricles__item-btn {
-  width: fit-content;
   padding: 8px 20px;
+  background-color: #0033ff;
+  border-radius: 8px;
+  color: #ffffff;
+  width: fit-content;
 }
 
 .aricles__item-img {
@@ -228,6 +230,7 @@ button:hover {
 .creators__cards {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .creators__cards-item {
@@ -238,7 +241,6 @@ button:hover {
   background-color: #ffffff;
   color: #000000;
   border-radius: 8px;
-  max-width: 361px;
   padding: 32px;
 }
 
