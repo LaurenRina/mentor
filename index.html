@@ -30,25 +30,25 @@
               />
             </a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Sounds</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Skills</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Plugins</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Studio</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Community</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Blog</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item--collapse">
             <a href="#" class="header__nav-link">Pricing</a>
           </li>
         </ul>
@@ -59,6 +59,13 @@
             Sign up
           </button>
         </div>
+        <button class="header__nav-toggler" type="button">
+          <img
+            src="./assets/img/nav-toggler.png"
+            alt="toggler"
+            class="header__nav-togglerIcon"
+          />
+        </button>
       </nav>
     </header>
 
@@ -100,157 +107,186 @@
           </div>
         </div>
       </section>
-      <section class="aricles">
-        <article class="aricles__item">
-          <div class="aricles__item-text">
-            <p class="aricles__item-topic">SOUNDS</p>
-            <h2 class="aricles__item-title">
-              A catalog so deep, it’s dangerous.
-            </h2>
-            <p class="aricles__item-description">
-              Expertly created and curated samples in any style imaginable.
-              Start swimming in sound.
-            </p>
-            <button class="aricles__item-btn">Explore Sounds</button>
-          </div>
-          <img
-            src="./assets/img/article-1.png"
-            alt="article-1"
-            class="aricles__item-img"
-          />
-        </article>
-        <article class="aricles__item aricles__reverse">
-          <div class="aricles__item-text aricles__reverse-text">
-            <p class="aricles__item-topic">CONNECTED EXPERIENCE</p>
-            <h2 class="aricles__item-title">A workflow that actually flows.</h2>
-            <p class="aricles__item-description">
-              Preview samples in your track’s key and tempo, drag and drop
-              sounds into your DAW, and organize your favorite samples, MIDI and
-              presets in one place.
-            </p>
-          </div>
-          <img
-            src="./assets/img/article-2.png"
-            alt="article-2"
-            class="aricles__item-img"
-          />
-        </article>
-        <article class="aricles__item">
-          <div class="aricles__item-text">
-            <p class="aricles__item-topic">GEAR</p>
-            <h2 class="aricles__item-title">
-              Build a drool-worthy studio, affordably.
-            </h2>
-            <p class="aricles__item-description">
-              The industry’s top software, all in one place, on payment plans
-              built to work for you.
-            </p>
-            <button class="aricles__item-btn">Explore Gear</button>
-          </div>
-          <img
-            src="./assets/img/article-3.png"
-            alt="article-3"
-            class="aricles__item-img"
-          />
-        </article>
-        <article class="aricles__item aricles__reverse">
-          <div class="aricles__item-text aricles__reverse-text">
-            <p class="aricles__item-topic">TECHNOLOGY</p>
-            <h2 class="aricles__item-title">Crate dig without the dust.</h2>
-            <p class="aricles__item-description">
-              Our intelligent search tools help you discover sounds you would
-              normally have to dig to find. Tech breaks the sweat, not you.
-            </p>
-            <button class="aricles__item-btn">Discover CoSo</button>
-          </div>
-          <img
-            src="./assets/img/article-4.png"
-            alt="article-4"
-            class="aricles__item-img"
-          />
-        </article>
+
+      <section class="sounds container">
+        <div class="sounds__text-content">
+          <p class="sounds__label">SOUNDS</p>
+
+          <h2 class="sounds__title">A catalog so deep, it’s dangerous.</h2>
+
+          <p class="sounds__subtitle">
+            Expertly created and curated samples in any style imaginable. Start
+            swimming in sound.
+          </p>
+
+          <button class="sounds__btn">Explore sounds</button>
+        </div>
+
+        <img
+          src="./assets/img/sounds.png"
+          alt="sounds"
+          loading="lazy"
+          class="sounds__img"
+        />
       </section>
-      <section class="creators">
-        <h2 class="creators__title">What creators are saying about Splice</h2>
-        <div class="creators__cards">
-          <div class="creators__cards-item">
+
+      <section class="connectedExperience container">
+        <img
+          src="./assets/img/connected-experience.png"
+          alt="connected-experience"
+          loading="lazy"
+          class="connectedExperience__img"
+        />
+
+        <div class="connectedExperience__text-content">
+          <p class="connectedExperience__label">Connected Experience</p>
+
+          <h2 class="connectedExperience__title">
+            A workflow that actually flows.
+          </h2>
+
+          <p class="connectedExperience__subtitle">
+            Preview samples in your track’s key and tempo, drag and drop sounds
+            into your DAW, and organize your favorite samples, MIDI and presets
+            in one place.
+          </p>
+        </div>
+      </section>
+
+      <section class="gear container">
+        <div class="gear__text-content">
+          <p class="gear__label">Gear</p>
+
+          <h2 class="gear__title">Build a drool-worthy studio, affordably.</h2>
+
+          <p class="gear__subtitle">
+            The industry’s top software, all in one place, on payment plans
+            built to work for you.
+          </p>
+
+          <button class="gear__btn">Explore Gear</button>
+        </div>
+
+        <img
+          src="./assets/img/gear.png"
+          alt="gear"
+          loading="lazy"
+          class="gear__img"
+        />
+      </section>
+
+      <section class="technology container">
+        <img
+          src="./assets/img/technology.png"
+          alt="technology"
+          loading="lazy"
+          class="technology__img"
+        />
+
+        <div class="technology__text-content">
+          <p class="technology__label">Technology</p>
+
+          <h2 class="technology__title">Crate dig without the dust.</h2>
+
+          <p class="technology__subtitle">
+            Our intelligent search tools help you discover sounds you would
+            normally have to dig to find. Tech breaks the sweat, not you.
+          </p>
+
+          <button class="technology__btn">Discover CoSo</button>
+        </div>
+      </section>
+
+      <section class="cards container">
+        <h2 class="cards__title">What creators are saying about Splice</h2>
+
+        <div class="cards__content">
+          <div class="card">
             <img
               src="./assets/img/card-1.png"
               alt="card-1"
-              class="creators__cards-img"
+              class="card__img"
+              loading="lazy"
             />
-            <h3 class="creators__cards-title">
+
+            <p class="card__text">
               I can always find what I’m looking for on Splice, whether it’s the
               exact sound I want or just a bit of inspiration.
-            </h3>
-            <p class="creators__cards-name">Andrew Huang</p>
+            </p>
+
+            <p class="card__author">Andrew Huang</p>
           </div>
-          <div class="creators__cards-item">
+
+          <div class="card">
             <img
               src="./assets/img/card-2.png"
               alt="card-2"
-              class="creators__cards-img"
+              class="card__img"
+              loading="lazy"
             />
-            <h3 class="creators__cards-title">
+
+            <p class="card__text">
               Finally a way to buy plugins that works. By paying a little at a
               time, producers can get legit access to the top VSTs.
-            </h3>
-            <p class="creators__cards-name">KSHMR</p>
+            </p>
+
+            <p class="card__author">KSHMR</p>
           </div>
-          <div class="creators__cards-item">
-            <img
-              src="./assets/img/card-3.png"
-              alt="card-3"
-              class="creators__cards-img"
-            />
-            <h3 class="creators__cards-title">
+
+          <div class="card">
+            <img src="./assets/img/card-3.png" alt="card-3" class="card__img" />
+
+            <p class="card__text">
               It’s been fun to dive into Splice’s creator community and explore
               tools that support my own creative process.
-            </h3>
-            <p class="creators__cards-name">Kesha Lee</p>
+            </p>
+
+            <p class="card__author">Kesha Lee</p>
           </div>
         </div>
       </section>
-      <section class="promo">
+
+      <section class="hero-footer">
         <img
-          src="./assets/img/promo-background.png"
-          alt="promo-background"
-          class="promo__background"
+          class="hero-footer__background"
+          src="./assets/img/footer-hero-background.png"
+          alt="footer-hero"
         />
-        <div class="promo__text">
-          <h2 class="promo__title">Try Splice today</h2>
-          <button class="promo__btn">Start now</button>
-        </div>
+
+        <h2 class="hero-footer__title">Try Splice today</h2>
+
+        <button class="hero-footer__btn">Start now</button>
       </section>
-      <footer class="footer">
-        <p class="footer__copyright">© 2022 Splice.com All Rights Reserved</p>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms of Use</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Jobs</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Contact</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Help</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link footer__link--facebook">
-              <img
-                src="./assets/img/footer-facebook.png"
-                alt="facebook"
-                class="footer__link--facebook"
-              />
-            </a>
-          </li>
-        </ul>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <ul class="footer__list container">
+        <li class="footer__rights">© 2022 Splice.com All Rights Reserved</li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Terms of Use</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Jobs</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Contact</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Help</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="https://facebook.com" target="_blank" class="footer__link">
+            <img
+              src="./assets/img/facebook.png"
+              alt="facebook"
+              class="footer__social-icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
