@@ -76,16 +76,15 @@ button:hover {
   padding: 20px;
 }
 
-.header__nav-list {
+.header__nav-list,
+.header__nav-controls {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.header__nav-controls {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.header__mobile-burger {
+  display: none;
 }
 
 .header__nav-btn--signup {
@@ -93,10 +92,6 @@ button:hover {
   background-color: #ffffff;
   border-radius: 32px;
   color: #000000;
-}
-
-.header__nav-toggler {
-  display: none;
 }
 
 .banner {
@@ -167,182 +162,54 @@ button:hover {
   transition: transform 0.3s ease;
 }
 
-.sounds {
+.article {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 96px;
 }
 
-.sounds__text-content {
+.article__text-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.sounds__label {
-  font-size: 12px;
-  text-transform: uppercase;
-  line-height: 14px;
-  color: #a6a8ad;
-}
-
-.sounds__title {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
-}
-
-.sounds__subtitle {
-  max-width: 422px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.sounds__btn {
-  padding: 8px 20px;
-  background-color: #0033ff;
-  border-radius: 8px;
-  width: fit-content;
-}
-
-.sounds__img {
-  width: 100%;
-  max-width: 580px;
-}
-
-.connectedExperience {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 96px;
-}
-
-.connectedExperience__text-content {
-  display: flex;
-  flex-direction: column;
+.articleReverse__text-content {
   align-items: end;
-  gap: 16px;
 }
 
-.connectedExperience__label {
+.article__label {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 14px;
   color: #a6a8ad;
 }
 
-.connectedExperience__title {
+.article__title {
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
 }
 
-.connectedExperience__subtitle {
-  text-align: end;
+.article__subtitle {
   max-width: 422px;
   font-size: 16px;
   line-height: 24px;
 }
 
-.connectedExperience__btn {
-  padding: 8px 20px;
-  background-color: #0033ff;
-  border-radius: 8px;
-  width: fit-content;
-}
-
-.connectedExperience__img {
-  width: 100%;
-  max-width: 580px;
-}
-
-.gear {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 96px;
-}
-
-.gear__text-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.gear__label {
-  font-size: 12px;
-  text-transform: uppercase;
-  line-height: 14px;
-  color: #a6a8ad;
-}
-
-.gear__title {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
-}
-
-.gear__subtitle {
-  max-width: 422px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.gear__btn {
-  padding: 8px 20px;
-  background-color: #0033ff;
-  border-radius: 8px;
-  width: fit-content;
-}
-
-.gear__img {
-  width: 100%;
-  max-width: 580px;
-}
-
-.technology {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 96px;
-}
-
-.technology__text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 16px;
-}
-
-.technology__label {
-  font-size: 12px;
-  text-transform: uppercase;
-  line-height: 14px;
-  color: #a6a8ad;
-}
-
-.technology__title {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
-}
-
-.technology__subtitle {
+.articleReverse__subtitle {
   text-align: end;
-  max-width: 442px;
-  font-size: 16px;
-  line-height: 24px;
 }
 
-.technology__btn {
+.article__btn {
   padding: 8px 20px;
   background-color: #0033ff;
   border-radius: 8px;
   width: fit-content;
 }
 
-.technology__img {
+.article__img {
   width: 100%;
   max-width: 580px;
 }
@@ -352,12 +219,6 @@ button:hover {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 120px;
-}
-
-.cards__title {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
 }
 
 .cards__content {
@@ -434,77 +295,75 @@ button:hover {
   gap: 24px;
 }
 
-.footer__rights {
-  color: #a6a8ad;
-}
-
+.footer__rights,
 .footer__link-item {
   color: #a6a8ad;
 }
 
-@media only screen and (max-width: 425px) {
-  img {
-    max-width: fit-content;
+@media (max-width: 768px) {
+  .header__nav-item,
+  .header__nav-controls {
+    display: none;
   }
 
-  .container {
-    max-width: 425px;
-  }
-
-  .header__nav-toggler {
+  .header__nav-item:first-child,
+  .header__mobile-burger {
     display: block;
   }
 
-  .header__nav-item--collapse {
-    display: none;
-  }
-
-  .header__nav-btn--login {
-    display: none;
-  }
-
-  .header__nav-btn--signup {
-    display: none;
-  }
-
   .banner {
-    justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 16px;
   }
 
-  .banner__text {
-    max-width: 300px;
-    margin-right: 0;
+  .banner__btn {
+    white-space: nowrap;
   }
 
+  .article {
+    flex-direction: column-reverse;
+  }
+
+  .articleReverse {
+    flex-direction: column;
+  }
+
+  .article__text-content {
+    margin-top: 44px;
+    align-items: center;
+  }
+
+  .article__title,
+  .article__subtitle {
+    text-align: center;
+  }
+
+  .cards {
+    margin-bottom: 48px;
+  }
+
+  .cards__content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer__list {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 500px) {
   .hero {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    margin-bottom: 26px;
-  }
-
-  .hero__background {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: fit-content;
-    height: 420px;
+    padding: 48px 0;
   }
 
   .hero__title {
-    max-width: 385px;
     font-size: 48px;
     line-height: 48px;
-    font-weight: 400;
   }
 
   .hero__subtitle {
-    margin-top: 26px;
-    margin-bottom: 26px;
     max-width: 345px;
-    font-size: 20px;
-    line-height: 24px;
   }
 
   .hero__btn {
@@ -515,164 +374,12 @@ button:hover {
     display: none;
   }
 
-  .hero__more-icon {
-    display: none;
-  }
-
-  .sounds {
-    flex-direction: column-reverse;
-    margin-bottom: 80px;
-  }
-
-  .sounds__text-content {
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .sounds__subtitle {
-    max-width: 385px;
-  }
-
-  .sounds__btn {
-    margin-top: 8px;
-  }
-
-  .sounds__img {
-    width: 100%;
-    max-width: 345px;
-    margin-bottom: 50px;
-  }
-
-  .connectedExperience {
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
-
-  .connectedExperience__text-content {
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .connectedExperience__subtitle {
-    text-align: center;
-    max-width: 385px;
-  }
-
-  .connectedExperience__btn {
-    margin-top: 8px;
-  }
-
-  .connectedExperience__img {
-    width: 100%;
-    max-width: 345px;
-    margin-bottom: 50px;
-  }
-
-  .gear {
-    flex-direction: column-reverse;
-    margin-bottom: 80px;
-  }
-
-  .gear__text-content {
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .gear__subtitle {
-    max-width: 385px;
-  }
-
-  .gear__btn {
-    margin-top: 8px;
-  }
-
-  .gear__img {
-    width: 100%;
-    max-width: 345px;
-    margin-bottom: 50px;
-  }
-
-  .technology {
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
-
-  .technology__text-content {
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .technology__subtitle {
-    text-align: center;
-    max-width: 385px;
-  }
-
-  .technology__btn {
-    margin-top: 8px;
-  }
-
-  .technology__img {
-    width: 100%;
-    max-width: 345px;
-    margin-bottom: 50px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
-
-  .cards__title {
-    text-align: center;
-    max-width: 385px;
-  }
-
-  .cards__content {
-    flex-direction: column;
-    max-width: 361px;
-  }
-
   .hero-footer {
-    gap: 80px;
-    padding-top: 110px;
-    padding-bottom: 110px;
-  }
-
-  .hero-footer__background {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
-    width: fit-content;
-    height: 375px;
+    padding: 108px 0;
   }
 
   .hero-footer__title {
     font-size: 44px;
     line-height: 40px;
-  }
-
-  .footer {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
-  .footer__list {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  .footer__rights {
-    order: 7;
   }
 }
